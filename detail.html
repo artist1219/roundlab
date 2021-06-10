@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket - Round Lab</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <button class="sprite aside">Aside Toogle Button</button>
+        <h1 class="logo"><a href="index.html">logo</a></h1>
+    </header>
+    <main>
+        <div class="product_order">
+            <img src="image/detail_01.jpg" alt="">
+            <div class="container">
+                <div class="product_basic">
+                    <div>
+                        <h2>1025 독도 로션 200ml</h2>
+                        <div class="icon">
+                            <div class="sprite heart2"></div>
+                            <div class="sprite share"></div>
+                        </div>
+                    </div>
+                    <h3 class="datail_price" data-price="20000"></h3>
+                </div>
+                <form class="price">
+                    <div>
+                        <h4>배송비</h4>
+                        <h5 class="delivery" data-price="2500">2,500원</h5>
+                    </div>
+                    <div>
+                        <h4>수량</h4>
+                        <div class="up_down_d">
+                            <div class="sprite plus"></div>
+                            <p>1</p>
+                            <div class="sprite minus"></div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detail_total">
+                        <h4>총 금액 (수량)</h4>
+                        <h6>20,000원 (1개)</h6>
+                    </div>
+                    <button type="submit" class="btn order">주문하기</button>
+                    <div class="btn_line">
+                        <button><a href="cart.html">장바구니</a></button>
+                        <button><a href="">위시리스트</a></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="product_desc">
+            <ul class="detail_menu">
+                <li class="active"><a href="">상세정보</a></li>
+                <li><a href="">구매정보</a></li>
+                <li><a href="">리뷰</a></li>
+                <li><a href="">Q&A</a></li>
+            </ul>
+            <img src="image/detail_02.jpg" alt="">
+            <ul class="tags">
+                <li>#수부지로션</li>
+                <li>#3겹보습</li>
+                <li>#유수분밸런스</li>
+            </ul>
+            <p>
+                수채화처럼 덧바르면 맑은 수분이 생기는 로션을 소개해요.<br/>
+                3겹 보호막으로 건강한 피부를 만들어 드릴게요.
+            </p>
+        </div>
+    </main>
+    <aside>
+        <div class="illust">
+            <div class="dokdo"></div>
+        </div>
+        <div class="container">
+            <div class="header">
+                <h2 class="logo"><a href="index.html">logo</a></h2>
+                <button class="sprite close">Aside Close Button</button>
+            </div>
+            <ul class="main_menu">
+                <li><a href="list.html">all</a></li>
+                <li><a href="list.html">skin care</a></li>
+                <li><a href="list.html">cleansing</a></li>
+                <li><a href="list.html">mask pack</a></li>
+                <li><a href="list.html">sun care</a></li>
+                <li><a href="list.html">set</a></li>
+            </ul>
+            <div class="user_menu">
+                <div>
+                    <p><a href="login.html">login</a></p>
+                    <p>/</p>
+                    <p><a href="">join us</a></p>
+                </div>
+                <hr>
+                <div>
+                    <ul>
+                        <li><a href="">my page</a></li>
+                        <li><a href="cart.html">basket</a></li>
+                        <li><a href="">delivery</a></li>
+                        <li><a href="">order</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">notice</a></li>
+                        <li><a href="">review</a></li>
+                        <li><a href="">Q&a</a></li>
+                        <li><a href="">event</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="info">
+                <ul id="info_tab">
+                    <li><a href="#cs_center">cs center</a></li>
+                    <li><a href="#bank_info">bank info</a></li>
+                    <li><a href="#by_language">by language</a></li>
+                </ul>
+                <!-- tab으로 구현 -->
+                <div>
+                    <div id="cs_center">
+                        <h5>070 - 7717 - 0675</h5>
+                        <ul>
+                            <li>WEEKLY 10:00 - 17:00</li>
+                            <li>LUNCH 12:00 - 13:00</li>
+                            <li>SAT . SUN . HOLIDAY OFF</li>
+                        </ul>
+                    </div>
+                    <div id="bank_info">
+                        <h5>신한 100-032-613698</h5>
+                        <p>서린컴퍼니(주)</p>
+                    </div>
+                    <ul id="by_language">
+                        <li>Korean</li>
+                        <li>Chinese</li>
+                        <li>English</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <footer>
+        <hr>
+        <div>
+            <ul>
+                <li>COMPANY 서린컴퍼니(주)</li>
+                <li>OWNER 정서린, 이영학</li>
+                <li>C.P.O 성경은</li>
+            </ul>
+            <ul>
+                <li>고객문의 cs@roundlab.co.kr</li>
+                <li>영업/제안 sales@roundlab.co.kr</li>
+                <li>oversea/海外/해외 trade@roundlab.co.kr</li>
+            </ul>
+        </div>
+        <ul>
+            <li>CALL CENTER 070-7717-0675</li>
+            <li>(10:00~17:00, 점심시간 12:00~13:00 | 주말, 공휴일 제외)</li>
+            <li>MALL ORDER LICENSE 2016-강원춘천-0225호</li>
+            <li>[사업자정보확인] BUSINESS LICENSE 843-88-00934</li>
+            <li><address>ADDRESS 24399 강원도 춘천시 동내면 거두택지길 70, 101호</address></li>
+        </ul>
+        <div>
+            <p>Copyright 라운드랩 All right reserved / design by Mingyeong Kim / Hosting by CAFE24</p>
+            <p>고객님은 안전거래를 위해 현금 등으로 결제시<br/>
+                저희 쇼핑몰에서 가입한 PG사의 구매안전서비스를 이용하실 수 있습니다.<br/>
+                KG 이니시스 에스크로 (서비스가입사실확인)</p>
+        </div>
+    </footer>
+</body>
+</html>

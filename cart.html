@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket - Round Lab</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <button class="sprite aside">Aside Toogle Button</button>
+        <h1 class="logo"><a href="index.html">logo</a></h1>
+    </header>
+    <main class="cart_main">
+        <h2><div class="sprite bag full"></div>Basket</h2>
+        <hr>
+        <form action="" class="cart_form">
+            <ul class="cart_list">
+                <li>
+                    <div>
+                        <img src="image/cart_01.jpg" alt="">
+                        <a href="detail.html"></a>
+                    </div>
+                    <div class="cart_content">
+                        <div>
+                            <h3>1025 독도 수면팩 100ml</h3>
+                            <h4 class="unit_price" data-price="21000"></h4>
+                        </div>
+                        <div class="count">
+                            <div class="up_down">
+                                <div class="sprite plus"></div>
+                                <p>2</p>
+                                <div class="sprite minus"></div>
+                            </div>
+                            <h5>42,000원</h5>
+                        </div>
+                        <button class="sprite close">Aside Close Button</button>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="image/cart_02.jpg" alt="">
+                        <a href="detail.html"></a>
+                    </div>
+                    <div class="cart_content">
+                        <div>
+                            <h3>1025 독도 클렌징 워터 400ml</h3>
+                            <h4 class="unit_price" data-price="18000"></h4>
+                        </div>
+                        <div class="count">
+                            <div class="up_down">
+                                <div class="sprite plus"></div>
+                                <p>1</p>
+                                <div class="sprite minus"></div>
+                            </div>
+                            <h5>18,000원</h5>
+                        </div>
+                        <button class="sprite close">Aside Close Button</button>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="image/cart_03.jpg" alt="">
+                        <a href="detail.html"></a>
+                    </div>
+                    <div class="cart_content">
+                        <div>
+                            <h3>1025 독도 로션 200ml</h3>
+                            <h4 class="unit_price" data-price="20000"></h4>
+                        </div>
+                        <div class="count">
+                            <div class="up_down">
+                                <div class="sprite plus"></div>
+                                <p>1</p>
+                                <div class="sprite minus"></div>
+                            </div>
+                            <h5>20,000원</h5>
+                        </div>
+                        <button class="sprite close">Aside Close Button</button>
+                    </div>
+                </li>
+            </ul>
+            <div class="empty">
+                <p>장바구니에 상품이 없습니다.</p>
+            </div>
+            <div class="result">
+                <div>
+                    <h5>상품 금액</h5>
+                    <h6 class="item_total">80,000원</h6>
+                </div>
+                <div>
+                    <h5>배송비</h5>
+                    <h6 class="delivery" data-price="2500">2,500원</h6>
+                </div>
+                <hr>
+                <div>
+                    <h3>결제 금액</h3>
+                    <h4 class="price_total">82,500원</h4>
+                </div>
+            </div>
+            <button type="submit" class="btn order">주문하기</button>
+        </form>
+    </main>
+    <aside>
+        <div class="illust">
+            <div class="dokdo"></div>
+        </div>
+        <div class="container">
+            <div class="header">
+                <h2 class="logo"><a href="index.html">logo</a></h2>
+                <button class="sprite close">Aside Close Button</button>
+            </div>
+            <ul class="main_menu">
+                <li><a href="list.html">all</a></li>
+                <li><a href="list.html">skin care</a></li>
+                <li><a href="list.html">cleansing</a></li>
+                <li><a href="list.html">mask pack</a></li>
+                <li><a href="list.html">sun care</a></li>
+                <li><a href="list.html">set</a></li>
+            </ul>
+            <div class="user_menu">
+                <div>
+                    <p><a href="login.html">login</a></p>
+                    <p>/</p>
+                    <p><a href="">join us</a></p>
+                </div>
+                <hr>
+                <div>
+                    <ul>
+                        <li><a href="">my page</a></li>
+                        <li><a href="cart.html">basket</a></li>
+                        <li><a href="">delivery</a></li>
+                        <li><a href="">order</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">notice</a></li>
+                        <li><a href="">review</a></li>
+                        <li><a href="">Q&a</a></li>
+                        <li><a href="">event</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="info">
+                <ul id="info_tab">
+                    <li><a href="#cs_center">cs center</a></li>
+                    <li><a href="#bank_info">bank info</a></li>
+                    <li><a href="#by_language">by language</a></li>
+                </ul>
+                <!-- tab으로 구현 -->
+                <div>
+                    <div id="cs_center">
+                        <h5>070 - 7717 - 0675</h5>
+                        <ul>
+                            <li>WEEKLY 10:00 - 17:00</li>
+                            <li>LUNCH 12:00 - 13:00</li>
+                            <li>SAT . SUN . HOLIDAY OFF</li>
+                        </ul>
+                    </div>
+                    <div id="bank_info">
+                        <h5>신한 100-032-613698</h5>
+                        <p>서린컴퍼니(주)</p>
+                    </div>
+                    <ul id="by_language">
+                        <li>Korean</li>
+                        <li>Chinese</li>
+                        <li>English</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <footer>
+        <hr>
+        <div>
+            <ul>
+                <li>COMPANY 서린컴퍼니(주)</li>
+                <li>OWNER 정서린, 이영학</li>
+                <li>C.P.O 성경은</li>
+            </ul>
+            <ul>
+                <li>고객문의 cs@roundlab.co.kr</li>
+                <li>영업/제안 sales@roundlab.co.kr</li>
+                <li>oversea/海外/해외 trade@roundlab.co.kr</li>
+            </ul>
+        </div>
+        <ul>
+            <li>CALL CENTER 070-7717-0675</li>
+            <li>(10:00~17:00, 점심시간 12:00~13:00 | 주말, 공휴일 제외)</li>
+            <li>MALL ORDER LICENSE 2016-강원춘천-0225호</li>
+            <li>[사업자정보확인] BUSINESS LICENSE 843-88-00934</li>
+            <li><address>ADDRESS 24399 강원도 춘천시 동내면 거두택지길 70, 101호</address></li>
+        </ul>
+        <div>
+            <p>Copyright 라운드랩 All right reserved / design by Mingyeong Kim / Hosting by CAFE24</p>
+            <p>고객님은 안전거래를 위해 현금 등으로 결제시<br/>
+                저희 쇼핑몰에서 가입한 PG사의 구매안전서비스를 이용하실 수 있습니다.<br/>
+                KG 이니시스 에스크로 (서비스가입사실확인)</p>
+        </div>
+    </footer>
+</body>
+</html>

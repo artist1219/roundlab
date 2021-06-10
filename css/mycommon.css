@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Roboto+Condensed&family=Roboto:wght@900&display=swap');
+/*
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+
+/* typography */
+
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+    color:#333;
+    line-height: 1;
+    background:#fff;
+}
+h2{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* layout */
+main, footer{
+    margin-left: 12.8vw;
+}
+
+/* button */
+.btn{
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* sprite */
+.sprite{
+    background: url(../image/sprite.png) no-repeat;
+    background-size: 158px 44px;
+    text-indent: -9999em;
+    display: inline-block;
+}
+.sprite.aside{
+    width: 18px; height: 15px;
+}
+.sprite.close{
+    width: 12px; height: 12px;
+    background-position-x: -24px;
+}
+.sprite.heart{
+    width: 16px;
+    height: 14px;
+    background-position-x:-48px;
+}
+.sprite.heart.active{
+    background-position-x:-96px;
+}
+.sprite.bag{
+    width: 14px;
+    height: 16px;
+    background-position-x:-72px;
+}
+.sprite.bag.active{
+    background-position-x:-120px;
+}
+.sprite.bag.full{
+    background-position-x:-144px;
+    display: inline-block;
+}
+.sprite.plus{
+    width: 13px; height: 13px;
+    background-position: -72px -24px;
+}
+.sprite.minus{
+    width: 13px; height: 13px;
+    background-position: -96px -24px;
+}
+.sprite.heart2{
+    width: 16px; height: 14px;
+    background-position: -120px -24px;
+}
+.sprite.share{
+    width: 14px; height: 14px;
+    background-position: -144px -24px;
+}
+
+
+/* common things */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6.4vw 0;
+}
+header .aside{
+    margin-left: 4vw;
+}
+header .logo{
+    margin-right: 4vw;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    height: 3.2vw;
+}
+.logo a{
+    background: url(../image/logo.png) no-repeat center / 85px 8px;
+    text-indent: -9999em;
+    width: 85px;
+    height: 8px;
+    display: inline-block;
+}
+
+
+footer{
+    line-height: 4vw;
+    margin-bottom: 6.4vw;
+}
+footer hr{
+    margin-bottom: 2.67vw;
+}
+footer > div:first-of-type{
+    display: flex;
+    gap: 0 4.267vw;
+    margin-bottom: 2.67vw;
+}
+footer > ul{
+    margin-bottom: 3.47vw;
+}
+footer li, footer p{
+    font-size: 2.53vw;
+    line-height: 4vw;
+}
+footer > div:last-of-type{
+    color:#999;
+}
+footer > div:last-of-type > p{
+    margin-bottom: 2.67vw;
+}
+
+
+aside{
+    position:fixed;
+    left: 0; top: 0;
+    width: 77%;
+    height: 100vh;
+    background: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    display: none;
+    z-index: 9;
+}
+aside:after{
+    content: '';
+    background: rgba(51, 51, 51, 0.25);
+    position:fixed;
+    top: 0; bottom: 0; right:0; left: 77%;
+}
+aside.active,
+aside.active:after{
+    display: block;
+}
+aside .container{
+    padding: 0 4vw;
+    position: relative;
+}
+.illust{
+    background: #CFDCEC;
+    height: 40.27vw;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.dokdo{
+    background: url(../image/dokdo.png) no-repeat;
+    background-size: 78px 31px;
+    width: 78px; height: 31px;
+    position: absolute;
+    top: -22px; right: 39px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+    margin-bottom: 4.27vw;
+}
+.main_menu{
+    font-size: 4.27vw;
+    margin-bottom: 10.67vw;
+}
+.main_menu li{
+    margin-bottom: 4.27vw;
+}
+.user_menu{
+    font-size:3.2vw;
+}
+.user_menu hr{
+    margin-bottom: 4.27vw;
+}
+.user_menu > div{
+    display: flex;
+    margin-bottom: 1.6vw;
+}
+.user_menu > div p{
+    margin-right: 1.6vw;
+}
+.user_menu > div ul:first-of-type{
+    margin-right: 19.73vw;
+}
+.user_menu > div ul li{
+    margin-bottom: 4.27vw;
+}
+.info{
+    display: flex;
+    position:fixed;
+    bottom: 16.8vw;
+    height: 20.27vw;
+}
+#info_tab{
+    font-size: 3.2vw;
+}
+#info_tab{
+    margin-right: 6.4vw;
+}
+#info_tab li{
+    margin-bottom: 2.67vw;
+}
+.info h5{
+    font-size: 4.27vw;
+    margin-bottom: 3.2vw;
+}
+.info div ul,
+.info div p{
+    font-size: 2.67vw;
+}
+.info div ul li{
+    margin-bottom: 1.6vw;
+}
+#bank_info{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+#bank_info h5{
+    font-size: 3.73vw;
+    font-weight: bold;
+}
+#by_language, #bank_info{
+    display: none;
+}
